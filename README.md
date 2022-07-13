@@ -12,7 +12,7 @@
 {
   elasticsearch:{
     client:{
-      node: 'https://test-pc.yunkc.cn/es/api/',
+      node: 'https://localhost:9200/',
       auth: {
         username: '',
         password: ''
@@ -28,10 +28,19 @@
 ```js
 {
   elasticsearch:{
-    clients:[
-      {
-        id:'xxx', // 唯一 ID,在使用时通过getClient(id) 获取对应客户端. 如果设置为default, 可以直接使用 ctx.es 获取并使用
-        node: 'https://test-pc.yunkc.cn/es/api/',
+    clients: {
+      clientA: {
+        node: 'https://localhost:9200/',
+        auth: {
+          username: '',
+          password: ''
+        },
+        maxRetries: 5,
+        requestTimeout: 60000,
+        sniffOnStart: true
+      },
+      clientB: {
+        node: 'https://localhost/es/api2/',
         auth: {
           username: '',
           password: ''
@@ -40,7 +49,7 @@
         requestTimeout: 60000,
         sniffOnStart: true
       }
-    ]
+    }
   }
 }
 ```
