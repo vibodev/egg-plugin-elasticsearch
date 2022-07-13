@@ -1,0 +1,62 @@
+{
+  "name": "egg-plugin-elasticsearch",
+  "version": "1.0.0",
+  "description": "elasticsearch for egg",
+  "eggPlugin": {
+    "name": "elasticsearch"
+  },
+  "keywords": [
+    "egg",
+    "egg-plugin",
+    "egg-elasticsearch",
+    "egg-plugin-elasticsearch"
+  ],
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.12.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.23.0",
+    "egg-bin": "^4.13.1",
+    "egg-ci": "^1.13.0",
+    "egg-mock": "^3.23.2",
+    "eslint": "^7.32.0",
+    "eslint-config-egg": "^7.5.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "supertest": "^4.0.2",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint --ext .js .  ",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "config",
+    "agent.js",
+    "lib",
+    "app.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibodev/egg-plugin-elasticsearch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vibodev/egg-plugin-elasticsearch/issues"
+  },
+  "homepage": "https://github.com/vibodev/egg-plugin-elasticsearch.git",
+  "author": "Vibo",
+  "license": "MIT"
+}
