@@ -10,6 +10,11 @@ declare module 'egg' {
   }
 
   interface EggAppConfig {
-    elasticsearch: ClientOptions
+    elasticsearch: {
+      client?: ClientOptions,
+      clients?: {
+        [key: string]: ClientOptions
+      }
+    }
   }
 }
