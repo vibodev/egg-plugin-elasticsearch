@@ -92,12 +92,13 @@ public async demo () {
 public async demo () {
   const { ctx, app } = this
   // 通过app获取。 
-  const client = app.get('clientA')
+  const client = app.elasticsearch.get('clientA')
+   const clientB = app.elasticsearch.get('clientB')
   // 通过ctx获取。 es为简写
-  const client = ctx.get('clientA')
-  const client = ctx.get('clientA')
+  const clientA = ctx.elasticsearch.get('clientA')
+  const clientB = ctx.es.get('clientB')
   try {
-    const result = await client.info()
+    const result = await clientA.info()
     return ctx.setResult(result.body)
   } catch (error) {
     console.log(error)
