@@ -116,4 +116,6 @@ public async demo () {
 ```
 
 ## 其它
-无
+使用了elasticsearch官方 SDK7.12.0 做的封装，API使用请自行查阅：
+
+[Elasticsearch JavaScript Client](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)
