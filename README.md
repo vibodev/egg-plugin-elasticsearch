@@ -2,8 +2,20 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![CC BY-NC-ND 4.0](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [配置](#%E9%85%8D%E7%BD%AE)
+  - [单客户端配置](#%E5%8D%95%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE)
+  - [多客户端配置](#%E5%A4%9A%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE)
+  - [plugin.js配置](#pluginjs%E9%85%8D%E7%BD%AE)
+- [使用](#%E4%BD%BF%E7%94%A8)
+  - [单客户端示例](#%E5%8D%95%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%A4%BA%E4%BE%8B)
+  - [多客户端示例](#%E5%A4%9A%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%A4%BA%E4%BE%8B)
+- [其它](#%E5%85%B6%E5%AE%83)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## 配置
 
 ### 单客户端配置
