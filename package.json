@@ -1,10 +1,11 @@
 {
   "name": "egg-plugin-elasticsearch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "elasticsearch for egg",
   "eggPlugin": {
     "name": "elasticsearch"
   },
+  "typings": "index.d.ts",
   "keywords": [
     "egg",
     "egg-plugin",
@@ -45,9 +46,10 @@
   },
   "files": [
     "config",
-    "agent.js",
     "lib",
-    "app.js"
+    "app.js",
+    "agent.js",
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",
