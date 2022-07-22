@@ -2,16 +2,8 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![CC BY-NC-ND 4.0](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
 
-- [egg-plugin-elasticsearch](#egg-plugin-elasticsearch)
-  - [配置](#配置)
-    - [单客户端配置](#单客户端配置)
-    - [多客户端配置](#多客户端配置)
-    - [plugin.js配置](#pluginjs配置)
-  - [使用](#使用)
-    - [单客户端示例](#单客户端示例)
-    - [多客户端示例](#多客户端示例)
-  - [其它](#其它)
-
+<!-- START doctoc -->
+<!-- END doctoc -->
 ## 配置
 
 ### 单客户端配置
